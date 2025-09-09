@@ -1,0 +1,64 @@
+Bdd
+
+discord 
+-> serveur
+    -> id_serveur : INT
+    -> nom : STR
+    -> propriétaire : STR
+    -> role : STR
+        -> id_role : INT
+        -> nom_role : STR
+        -> niveau : INT
+    -> dossier_salon
+    -> salon_vocaux : STR
+    -> salon_textuel : STR
+    -> boost : INT
+
+-> profil
+    -> id_profil : INT
+    -> nom_affichage : STR
+    -> nom_utilisateur : STR
+    -> email : STR
+    -> numero_tel : INT
+    -> nitro : BOOL
+    -> auth : BOOL
+    -> cle_securite : STR
+    -> solde : INT
+    -> inventaire_gemme : INT
+    -> inventaire_objet : INT FK id_objet
+    -> inventaire_quete : INT FK id_quete
+
+-> quete
+    -> id_quete : INT
+    -> intitule : STR
+    -> recompense : STR
+
+-> boutique
+    -> id_objet
+    -> nom_objet
+    -> prix_obj_euro
+    -> prix_obj_gemme
+
+-> jeux
+    -> id_jeu
+    -> nom_jeu
+    -> prix_jeu
+
+-> application
+    -> id_application
+    -> nom_application
+    -> prix_application
+
+-> notification
+    -> id_notification
+    -> nom_notification
+    -> intitule
+    -> provenance
+    -> vu
+
+-> dossier
+-> amitie
+-> evenement
+-> message
+-
+
