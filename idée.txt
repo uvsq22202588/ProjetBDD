@@ -4,8 +4,8 @@ discord
 -> serveur
     -> id_serveur : INT
     -> nom : STR
-    -> propriétaire : STR
-    -> role : STR
+    -> id_propriétaire : STR
+    -> nom_role : STR
         -> id_role : INT
         -> nom_role : STR
         -> niveau : INT
@@ -57,8 +57,26 @@ discord
     -> vu
 
 -> dossier
+    -> id_dossier
+    -> position
+    -> id_serveur
+    -> couleur
+
 -> amitie
+    -> id_amis
+    -> personne_a
+    -> personne_b
+
 -> evenement
+    -> id_evenement
+    -> id_serveur
+    -> intitule
+
 -> message
--
+    -> id_message
+    -> id_envoyeur
+    -> id_receveur
+    -> contenu
+    -> photo
+    -> message_vocal
 
